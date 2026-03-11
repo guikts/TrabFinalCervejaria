@@ -21,3 +21,4 @@ data date not null,
 local varchar(100) not null,
 avaliacao int(2) not null,
 comentarios varchar(500) not null
+);
