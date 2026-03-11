@@ -1,0 +1,21 @@
+Comando para criação do banco de dados:
+
+CREATE TABLE usuario(
+id int AUTO_INCREMENT not null PRIMARY KEY,
+nome varchar(60) not null,
+email varchar(60) not null,
+senha varchar(90) not null
+);
+
+CREATE TABLE cerveja(
+id int AUTO_INCREMENT not null PRIMARY KEY,
+nome varchar(60) not null,
+tipo varchar(20) not null,
+porcentagem decimal(3,1)not null,
+IBU int(100) not null,
+pais varchar(70) not null,
+fabricante varchar(60) not null,
+data date not null,
+local varchar(100) not null,
+avaliacao int(2) not null,
+comentarios varchar(500) not null
