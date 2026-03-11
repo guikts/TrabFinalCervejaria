@@ -1,5 +1,7 @@
 Comando para criação do banco de dados:
 
+Nome:cervejaria
+
 CREATE TABLE usuario(
 id int AUTO_INCREMENT not null PRIMARY KEY,
 nome varchar(60) not null,
