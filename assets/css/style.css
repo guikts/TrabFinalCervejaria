@@ -1,0 +1,372 @@
+/*
+Fundo Principal,Creme,#FFFDE7
+Fundo Secundário,Bege,#F5EFE6
+Headers e Rodapé,Marrom Stout,#4E342E
+Texto Principal,Grafite,#3E2723
+Texto Secundário,Cinza,#795548
+Ação Principal / Destaque,Âmbar/Dourado,#FFC107
+Ação Secundária / Sucesso,Verde Lúpulo,#556B2F
+Perigo / Excluir,Vermelho Bock,#B71C1C
+*/
+
+/* ===========================  */
+/* ========== Geral  =========  */
+/* ===========================  */
+
+body{
+    background-color: #3E2723;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: #F5EFE6;
+    width: 100%;
+    color: #F5EFE6;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    font-size: 20px;
+    color: #3E2723;
+}
+
+h2{
+    color: #3E2723;
+}
+
+h3{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
+
+}
+
+
+.campos{
+    color: #795548;
+}
+
+/* --- Campos de Input --- */
+.cxi{
+    width: 400px;
+    height: 35px;
+    border: 2px solid #795548;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
+.cxi:hover{
+    border-color: #FFC107;
+    box-shadow: 0 0 5px #FFC107;
+}
+
+
+/* --- Botões --- */
+
+.bts{
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bts:hover{
+    background-color: #FFD54F;
+    box-shadow: 2px 2px black;
+    translate: 2px 2px;
+}
+
+.btn-p {
+    background-color: #FFC107;
+    box-shadow: 3px 3px black;
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-p:hover {
+    background-color: #edb500;
+    box-shadow: 2px 2px black;
+    transform: translate(2px, 2px);
+}
+
+.btn-s {
+    background-color: #795548;
+    color: #F5EFE6;
+    box-shadow: 3px 3px #3E2723;
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-s:hover {
+    background-color: #5D4037;
+    box-shadow: 1px 1px #3E2723;   
+    transform: translate(2px, 2px);
+}
+
+#btnhome{
+    width: 50dvw;
+}
+
+/* --- Radio Buttons --- */
+.radio{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+/* ======================  */
+/* ===== Tela Index =====  */
+/* ======================  */
+
+#intro{
+    background-color: #ff2600;
+    color: #ff2600;
+    position: fixed;
+    z-index: 1000;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    width: 10vw;
+    height: 10vw;
+    transform-origin: center center;
+    animation: intro 5s 0.5s forwards;
+}
+
+@keyframes intro {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    20%{
+        transform: scale(2);
+        opacity: 1;
+    }
+    40%{
+        transform: scale(5);
+        opacity: 1;
+    }
+    60%{
+        transform: scale(7);
+        opacity: 1;
+    }
+    90%{
+        transform: scale(100);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(100);
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+}
+
+#btlog{
+    width: 50%;
+    margin-top: 20px;
+}
+
+#formp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: #3E2723;
+    padding-bottom: 30px;
+    background-color: #F5EFE6;
+}
+
+#divp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: #3E2723;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    margin-left: 20dvw;
+    margin-right: 20dvw;
+    background-color: #F5EFE6;
+    animation: principal 5s 5s forwards;
+    opacity: 0;
+}
+
+@keyframes principal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+#hi{
+    opacity: 0;
+    animation: aparecer 5s 5s forwards;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+#btentrar{
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+/* ===========================  */
+/* == Tela Cadastro Usuário ==  */
+/* ===========================  */
+
+#bodyc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#divpc{
+    background-color: #F5EFE6;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.divs{
+    margin: 30px;
+    padding: 10px;
+}
+
+/* ========================  */
+/* ===== Tela Inicial =====  */
+/* ========================  */
+
+#divph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: #3E2723;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    margin-left: 20dvw;
+    margin-right: 20dvw;
+    background-color: #F5EFE6;
+}
+
+.formshome{
+    margin: 20px;
+}
+
+
+
+/* =======================================  */
+/* ===== Tela Cadastro de Degustação =====  */
+/* =======================================  */
+
+#divcd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EFE6;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+#gambiarra {
+    margin-bottom: 20px;
+}
+
+/* =====================  */
+/* ===== Tela Home =====  */
+/* =====================  */
+
+
+
+
+
+/* =============================  */
+/* ===== Tela Estatísticas =====  */
+/* =============================  */
+
+#divpe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: #3E2723;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    margin-left: 20dvw;
+    margin-right: 20dvw;
+    background-color: #F5EFE6;
+}
+
+#divpl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: #3E2723;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    margin-left: 20dvw;
+    margin-right: 20dvw;
+    background-color: #F5EFE6;
+}
+
+input[type="radio"] {
+    accent-color: #a2ff00;
+}
